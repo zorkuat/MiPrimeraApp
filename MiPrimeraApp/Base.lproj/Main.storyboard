@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TXW-6F-X0O">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GurmukhiMN.ttc">
+            <string>GurmukhiMN</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Opus-->
+        <scene sceneID="je6-UE-Fhm">
+            <objects>
+                <viewController title="Opus" id="A95-sx-3B7" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8LB-16-dpk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uax-L0-DVh">
+                                <rect key="frame" x="118" y="90" width="178" height="239"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="f3k-Co-EWR"/>
+                                    <constraint firstAttribute="height" constant="239" id="srR-Gw-aVw"/>
+                                </constraints>
+                                <state key="normal" title="LOGO" image="Leather-Book-Metal-Sigil-necronomicon.png"/>
+                                <connections>
+                                    <action selector="logoPulsado:" destination="A95-sx-3B7" eventType="primaryActionTriggered" id="JXt-7n-DtY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWX-6c-Lsp">
+                                <rect key="frame" x="10" y="334.33333333333331" width="394" height="67.333333333333371"/>
+                                <string key="text">Nunca fuimos capaces de recuperar el ensoñador participio que nos abrió las puertas del infierno. Los libros polvorientos estaban enfermos de gusano roedor y mohos viejos que tampoco ayudaban a comprender el mal olor.</string>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rC9-eq-ri9">
+                                <rect key="frame" x="372" y="694" width="22" height="22"/>
+                                <connections>
+                                    <segue destination="d3J-1g-tI4" kind="show" id="KFt-C0-SfB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uax-L0-DVh" firstAttribute="top" secondItem="HMx-Pm-ltR" secondAttribute="top" constant="26" id="3Ni-D6-Y3I"/>
+                            <constraint firstItem="MWX-6c-Lsp" firstAttribute="centerY" secondItem="8LB-16-dpk" secondAttribute="centerY" id="9LJ-SE-PN7"/>
+                            <constraint firstItem="Uax-L0-DVh" firstAttribute="top" secondItem="HMx-Pm-ltR" secondAttribute="top" constant="26" id="WHf-NR-FLo"/>
+                            <constraint firstItem="MWX-6c-Lsp" firstAttribute="leading" secondItem="8LB-16-dpk" secondAttribute="leading" constant="10" id="aVv-LL-SaB"/>
+                            <constraint firstItem="MWX-6c-Lsp" firstAttribute="centerX" secondItem="8LB-16-dpk" secondAttribute="centerX" id="b3L-06-2eA"/>
+                            <constraint firstItem="HMx-Pm-ltR" firstAttribute="bottom" secondItem="rC9-eq-ri9" secondAttribute="bottom" constant="20" id="dy4-ET-Tgw"/>
+                            <constraint firstItem="MWX-6c-Lsp" firstAttribute="centerY" secondItem="8LB-16-dpk" secondAttribute="centerY" multiplier="2.1" id="jER-jg-pdv"/>
+                            <constraint firstAttribute="trailing" secondItem="MWX-6c-Lsp" secondAttribute="trailing" constant="10" id="oh5-0V-SmE"/>
+                            <constraint firstItem="MWX-6c-Lsp" firstAttribute="centerX" secondItem="8LB-16-dpk" secondAttribute="centerX" id="pyh-NO-UbA"/>
+                            <constraint firstItem="HMx-Pm-ltR" firstAttribute="trailing" secondItem="rC9-eq-ri9" secondAttribute="trailing" constant="20" id="pyl-UI-IeM"/>
+                            <constraint firstItem="Uax-L0-DVh" firstAttribute="centerX" secondItem="8LB-16-dpk" secondAttribute="centerX" id="rFv-eG-vXl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HMx-Pm-ltR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Opus" id="DG6-P0-asY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nap-8d-KHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301.60000000000002" y="-200.24630541871923"/>
+        </scene>
+        <!--Bestiario-->
+        <scene sceneID="XVE-2u-NvY">
+            <objects>
+                <tableViewController title="Bestiario" id="d3J-1g-tI4" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="60T-4i-tpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="9yv-gC-bud">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="94L-bB-uxo" detailTextLabel="nXz-Ug-oR5" style="IBUITableViewCellStyleSubtitle" id="3lR-Jt-aqT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3lR-Jt-aqT" id="IMJ-NE-XFi">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Necronomicón" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="94L-bB-uxo">
+                                                    <rect key="frame" x="20" y="5" width="112" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Abdul Alhazred" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nXz-Ug-oR5">
+                                                    <rect key="frame" x="20" y="25.333333333333332" width="86.333333333333329" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="tintColor" red="0.0694395924" green="0.5774166127" blue="0.186923648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="4AI-Ij-Sge" detailTextLabel="gvf-vs-IRZ" style="IBUITableViewCellStyleSubtitle" id="6Ox-Ob-iiY">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Ox-Ob-iiY" id="PKI-ie-9sM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Vermiis Misteriis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4AI-Ij-Sge">
+                                                    <rect key="frame" x="20.000000000000007" y="5" width="124.66666666666667" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Olaus Wormius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gvf-vs-IRZ">
+                                                    <rect key="frame" x="20" y="25.333333333333332" width="85.333333333333329" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="tintColor" red="0.0694395924" green="0.5774166127" blue="0.186923648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="d3J-1g-tI4" id="8Qt-Nm-4G4"/>
+                            <outlet property="delegate" destination="d3J-1g-tI4" id="5PZ-6k-sGK"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDk-BC-S8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ckd-sl-iuZ" detailTextLabel="LWW-BR-b2m" style="IBUITableViewCellStyleSubtitle" id="gc9-i2-C7B">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gc9-i2-C7B" id="uS8-N5-bTw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Necronomicón" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ckd-sl-iuZ">
+                                <rect key="frame" x="16" y="5" width="112" height="20.333333333333332"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Abdul Alhazred" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LWW-BR-b2m">
+                                <rect key="frame" x="16" y="25.333333333333332" width="86.333333333333329" height="14.333333333333334"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="tintColor" red="0.0694395924" green="0.5774166127" blue="0.186923648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tableViewCellContentView>
+                </tableViewCell>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ZCi-Ei-rVX" detailTextLabel="nDV-bM-6TK" style="IBUITableViewCellStyleSubtitle" id="JGo-WW-H6Q">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JGo-WW-H6Q" id="mwR-Oi-cp2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Necronomicón" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZCi-Ei-rVX">
+                                <rect key="frame" x="16" y="5" width="112" height="20.333333333333332"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Abdul Alhazred" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nDV-bM-6TK">
+                                <rect key="frame" x="16" y="25.333333333333332" width="86.333333333333329" height="14.333333333333334"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="tintColor" red="0.0694395924" green="0.5774166127" blue="0.186923648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tableViewCellContentView>
+                </tableViewCell>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="rJc-09-K78" detailTextLabel="Twf-SX-Y7A" style="IBUITableViewCellStyleSubtitle" id="Jnt-ax-aTi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jnt-ax-aTi" id="yh8-Id-IJy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Necronomicón" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rJc-09-K78">
+                                <rect key="frame" x="16" y="5" width="112" height="20.333333333333332"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Abdul Alhazred" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Twf-SX-Y7A">
+                                <rect key="frame" x="16" y="25.333333333333332" width="86.333333333333329" height="14.333333333333334"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="tintColor" red="0.0694395924" green="0.5774166127" blue="0.186923648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tableViewCellContentView>
+                </tableViewCell>
+            </objects>
+            <point key="canvasLocation" x="1297" y="-200"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rws-9b-0Za">
+            <objects>
+                <navigationController id="TXW-6F-X0O" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dNU-F3-fU8">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="A95-sx-3B7" kind="relationship" relationship="rootViewController" id="5Ch-5K-uHZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQA-gr-M7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-546" y="-200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Leather-Book-Metal-Sigil-necronomicon.png" width="393" height="486"/>
+    </resources>
+</document>
